@@ -1,0 +1,196 @@
+.css-z2eky3-MuiTypography-root {
+  font-size: 1.6rem !important;
+}
+.css-10hburv-MuiTypography-root {
+  font-size: 1.6rem !important;
+}
+
+.css-rorn0c-MuiTableContainer-root * {
+  font-size: 1.5rem !important;
+}
+
+.css-1u3bzj6-MuiFormControl-root-MuiTextField-root * {
+  font-size: 1.5rem !important;
+}
+
+.css-169iwlq-MuiCalendarPicker-root * {
+  font-size: 1.4rem !important;
+}
+
+.css-pdct74-MuiTablePagination-selectLabel {
+  font-size: 1.5rem !important;
+  margin-top: 0;
+}
+.css-10by3a5-MuiButtonBase-root-MuiMenuItem-root-MuiTablePagination-menuItem.Mui-selected {
+  font-size: 1.3rem !important;
+}
+.css-194a1fa-MuiSelect-select-MuiInputBase-input.MuiSelect-select {
+  font-size: 1.4rem;
+}
+
+.css-i4bv87-MuiSvgIcon-root {
+  width: 1.2em !important;
+  height: 1.2em !important;
+  font-size: 1.6rem !important;
+}
+
+.css-8u39c-MuiTypography-root {
+  font-size: 1.8rem !important;
+}
+
+.css-ciy9n4-MuiPaper-root-MuiAppBar-root span {
+  font-size: 1.5rem;
+}
+.css-15v75y9 span {
+  font-size: 1.5rem;
+}
+
+.css-1knaqv7-MuiButtonBase-root-MuiButton-root {
+  font-size: 1.5rem !important;
+}
+
+.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
+  font-size: 1.3rem !important;
+}
+
+.css-4rdffl-MuiDataGrid-panelFooter button {
+  font-size: 1.4rem !important;
+}
+
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root {
+  font-size: 1.5rem !important;
+}
+
+.css-1dmqq7i-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input.css-1dmqq7i-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input.css-1dmqq7i-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input,
+.css-1x51dt5-MuiInputBase-input-MuiInput-input {
+  font-size: 1.6rem !important;
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+}
+
+.addButton * {
+  font-size: 1.5rem !important;
+}
+
+.greenColor {
+  color: green !important;
+}
+.redColor {
+  color: red !important;
+}
+
+.yellowColor {
+  color: #c96 !important;
+}
+
+.productReviewsForm {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  & * {
+    font-size: 1.5rem !important;
+  }
+}
+
+.flexDiv {
+  & * {
+    font-size: 1.5rem !important;
+  }
+  & p {
+    margin-top: 0;
+    margin-right: 4rem;
+    color: black;
+  }
+}
+
+.MuiAutocomplete-popper * {
+  font-size: 1.5rem !important;
+}
+
+.react-confirm-alert-body {
+  font-size: 1.5rem;
+  & h1 {
+    font-size: 2rem;
+  }
+}
+
+.confirmCartItemsContainer {
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  & img {
+    width: 120px;
+    height: 120px;
+  }
+  & a,
+  span {
+    font-size: 1.5rem;
+  }
+}
+
+.orderDetail {
+  & > div {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  & p {
+    font-size: 1.6rem;
+    margin-top: 0;
+  }
+  & span {
+    font-size: 1.4rem;
+  }
+}
+
+.css-1otb2k4-MuiFormControl-root {
+  & * {
+    font-size: 1.3rem !important;
+  }
+}
+
+.updateOrderForm > div {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.statistical-number {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: black;
+  & + p {
+    color: black;
+  }
+}
+
+.lineChart {
+  margin-top: 1.3rem;
+}
+
+.doughnutChart {
+  margin-top: 1.3rem;
+}
+
+.tableInventory h6 {
+  margin: 0;
+}
+
+.cancelText {
+  font-size: 2rem !important;
+  font-weight: bold;
+  margin-right: 2rem;
+  color: #1976d2;
+  cursor: pointer;
+  transition: 0.25s all linear;
+  &:hover{
+    text-decoration: underline;
+  }
+}

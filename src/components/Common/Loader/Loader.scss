@@ -1,0 +1,205 @@
+// .loading {
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: white;
+//   display: grid;
+//   place-items: center;
+//   max-width: 100%;
+// }
+
+// .lds-grid {
+//   display: inline-block;
+//   position: relative;
+//   width: 10vmax;
+//   height: 10vmax;
+// }
+
+// .lds-grid {
+  
+//   div {
+//     position: absolute;
+//     width: 28px;
+//     height: 28px;
+//     border-radius: 50%;
+//     background: #000;
+//     animation: lds-grid 2s linear infinite;
+//   }
+
+// }
+
+// .lds-grid {
+//   div:nth-child(1) {
+//     top: -16px;
+//     left: -18px;
+//     animation-delay: 0s;
+//   }
+
+// }
+
+// .lds-grid {
+//   div:nth-child(2) {
+//     top: -16px;
+//     left: 32px;
+//     animation-delay: -0.4s;
+//   }
+// }
+
+// .lds-grid  {
+//   div:nth-child(3){
+//     top: -16px;
+//     left: 80px;
+//     animation-delay: -0.8s;
+//   }
+
+// }
+
+// .lds-grid {
+//   div:nth-child(4) {
+//     top: 32px;
+//     left: -18px;
+//     animation-delay: -0.4s;
+//   }
+
+// }
+
+// .lds-grid {
+//   div:nth-child(5) {
+//     top: 32px;
+//     left: 32px;
+//     animation-delay: -0.8s;
+//   }
+// }
+
+// .lds-grid {
+//   div:nth-child(6) {
+//     top: 32px;
+//     left: 80px;
+//     animation-delay: -1.2s;
+//   }
+// }
+
+// .lds-grid{
+//   div:nth-child(7) {
+//     top: 80px;
+//     left: -18px;
+//     animation-delay: -0.8s;
+//   }
+// }
+
+// .lds-grid {
+//   div:nth-child(8) {
+//     top: 80px;
+//     left: 32px;
+//     animation-delay: -1.2s;
+//   }
+// }
+
+// .lds-grid{
+//   div:nth-child(9) {
+//     top: 80px;
+//     left: 80px;
+//     animation-delay: -1.6s;
+//   }
+// }
+
+// @keyframes lds-grid {
+//   0%, 100% {
+//     opacity: 1;
+//   }
+//   50% {
+//     opacity: 0.5;
+//   }
+// }
+
+$ringRadius: 7rem;
+$ringSectors: 30;
+$animDuration: 8s;
+
+\:root {
+  font-size: calc(16px + (24 - 16)*(100vw - 320px)/ (1280 - 320));
+}
+
+.preloader {
+  display: flex;
+	color: #3df1f1;
+	// font: 1em Dosis, sans-serif;
+	// height: 100vh;
+	line-height: 1.5;
+  width: 100vw;
+  height: 100vh;
+  // background-color: white;
+  // display: grid;
+  max-width: 100%;
+}
+
+
+.preloader {
+  animation: tiltSpin $animDuration linear infinite;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 17em;
+  height: 17em;
+  &,
+  &__ring {
+    transform-style: preserve-3d;
+  }
+  &__ring {
+    animation: {
+      name: spin;
+      duration: $animDuration/2;
+      timing-function: inherit;
+      iteration-count: inherit;
+    }
+    font-size: 2em;
+    position: relative;
+    height: 3rem;
+    width: 1.5rem;
+    &:nth-child(even) {
+      animation-direction: reverse;
+    }
+  }
+  &__sector {
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateZ($ringRadius);
+    &,
+    &:empty:before {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+    &:empty:before {
+      background: linear-gradient(transparent 45%,currentColor 45% 55%,transparent 55%);
+      content: "";
+    }
+    @for $s from 2 through $ringSectors {
+      &:nth-child(#{$s}) {
+        $angle: (360deg / $ringSectors) * ($s - 1);
+        transform: rotateY($angle) translateZ($ringRadius);
+      }
+    }
+  }
+}/* Animations */
+@keyframes tiltSpin {
+  from {
+    transform: rotateY(0) rotateX(30deg);
+  }
+  to {
+    transform: rotateY(1turn) rotateX(30deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+};
